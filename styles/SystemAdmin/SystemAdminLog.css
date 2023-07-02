@@ -1,0 +1,311 @@
+.dialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.5);
+    z-index: 4;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.dialog__content{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: max-content;
+    height: max-content;
+}
+.dialog__content h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1B1F3BA5;
+    margin-bottom: 32px;
+    word-break: break-all;
+}
+.dialog__content .input__wrapper input{
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 30px 16px 6px 16px;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    outline: none;
+
+}
+.dialog__content .input__wrapper .big{
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    word-break: break-all;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    outline: none;
+}
+.dialog__content .input__wrapper{
+    position: relative;
+    height: max-content;
+    width: max-content;
+}
+.dialog__content .input__wrapper p{
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    color: #1B1F3BA5;
+    pointer-events: none;
+}
+.dialog__content .checkbox__wrapper{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+.dialog__content .checkbox__wrapper input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+}
+.dialog__content .select__wrapper{
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+.dialog__content .select__wrapper select{
+    width: 300px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    padding: 30px 16px 8px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: rgba(27, 31, 59, 0.4);
+    box-sizing: border-box;
+}
+.dialog__content .select__wrapper p{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    color: #1B1F3BA5;
+}
+.dialog__content .additional__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dialog__content .additional__wrapper input[type=color]{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    border-radius: 160px;
+    overflow: hidden;
+    height: 28px;
+    width: 41px;
+}
+.dialog__content .additional__wrapper .color__wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.dialog__content .additional__wrapper .checkbox__wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.dialog__content button{
+    width: 100%;
+    height: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    background: #3082F7;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 32px;
+    outline: none;
+    transition: all .2s ease;
+}
+.dialog__content button:active{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+/*------------------------------------------------*/
+.left{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    height: max-content;
+}
+.time__select{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.time__select .select__wrapper {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 8px 12px;
+    border: 1px solid #959BA451;
+    border-radius: 8px;
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+}
+
+.calendar__block{
+    z-index: 4;
+    top: calc(100% + 5px);
+    left: 0;
+    position: absolute;
+    width: max-content;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.1), 0px 7.7037px 12.7407px rgba(0, 0, 0, 0.0607407), 0px 1.62963px 3.25926px rgba(0, 0, 0, 0.0607);
+    display: none;
+}
+.calendar__shown{
+    display: block;
+}
+.calendar__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body__row{
+    display: grid;
+    grid-template-areas: "a a a a a a a";
+}
+.body__row__to{
+    display: grid;
+    grid-template-areas: "a a a a a a a";
+}
+.body__row .box__from{
+    width: 36px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box__to{
+    width: 36px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body__row .box__week__from{
+    width: 36px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body__row .box__week__to{
+    width: 36px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------------------------------------------*/
+.log{
+    width: 100%;
+    height: 100%;
+}
+.content .content__inner .content__wrapper .content__section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .content__inner .content__wrapper .content__section .row__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #3082F7;
+    height: 9.09%;
+    padding: 0 16px;
+    border-radius: 0px 0px 8px 8px;
+}
+.content .content__inner .content__wrapper .content__section .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1B1F3BA5;
+    background: #fff;
+    height: 9.09%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border: 1px solid rgba(121, 129, 140, 0.12);
+    border-radius: 9px;
+}
+
+/*----------------------------------------------------*/
+.time{
+    width: 10.09%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.rfid{
+    width: 16.98%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.customer{
+    width: 13.45%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.resident{
+    width: 4.79%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.action{
+    width: 12.61%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.performed__by{
+    width: 12.86%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.track{
+    width: 3.02%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*-----------------------------------------*/
+
+.action__select{
+    height: 100%;
+}
+#resetAll{
+    width: 76px;
+    height: 32px;
+    background: #79818C1E;
+    border: 0;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #1B1F3B;
+}

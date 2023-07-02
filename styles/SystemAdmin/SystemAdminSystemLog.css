@@ -1,0 +1,75 @@
+.system {
+    width: 100%;
+    height: 100%;
+}
+.content .content__inner .content__wrapper .content__section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .content__inner .content__wrapper .content__section .row__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #3082F7;
+    height: 9.09%;
+    padding: 0 16px;
+    border-radius: 0px 0px 8px 8px;
+}
+.content .content__inner .content__wrapper .content__section .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1B1F3BA5;
+    background: #fff;
+    height: 9.09%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border: 1px solid rgba(121, 129, 140, 0.12);
+    border-radius: 9px;
+}
+.security__level{
+    width: 7.56%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.severity{
+    width: 4.62%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.activity{
+    width: 16.82%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.description{
+    width: 25.23%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.email__username{
+    width: 12.61%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.occurrence{
+    width: 11.18%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.wrapper__header{
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+.checkbox__wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}

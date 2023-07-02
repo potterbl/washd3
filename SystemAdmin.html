@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SystemAdmin</title>
+    <link rel="stylesheet" href="styles/GeneralStyles.css">
+    <link rel="stylesheet" href="styles/SystemAdmin/SystemAdminLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login__sys">
+        <div class="languages">
+            <div class="language__section" id="nor">
+                <img src="src/SystemAdmin/flagNor.png" alt="">
+            </div>
+            <div class="language__section lang__active" id="en">
+                <img src="src/SystemAdmin/flagEn.png" alt="">
+            </div>
+        </div>
+        <div class="login__logo">
+            <img src="src/SystemAdmin/Logo.png" alt="Logo">
+        </div>
+        <div class="login__form">
+            <div class="form">
+                <h1>Welcome to Washd</h1>
+                <div class="inputs">
+                    <label id="label__login">
+                        <input type="text" id="login">
+
+                        <p>Email / Username</p>
+                    </label>
+                    <label id="label__password">
+                        <input type="password" id="password">
+
+                        <p>Password</p>
+                    </label>
+                </div>
+                <button>LOG IN</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/SystemAdmin/AdminLogin.js"></script>
+</body>
+</html>

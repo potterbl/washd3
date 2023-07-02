@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../styles/GeneralStyles.css">
+    <link rel="stylesheet" href="../../styles/SystemAdmin/SystemAdminDashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content__wrapper">
+        <div class="menu">
+            <img style="width: 72px" src="../../src/SystemAdmin/LogoMini.png" alt="">
+            <div class="menu__buttons">
+                <div class="tooltip__wrapper" id="tooltipHome" style="transform: translateY(-4px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipSystemAdmin" style="transform: translateY(60px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>System Admin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipCustomerAdmin" style="transform: translateY(124px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Customer Admin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipTextileAdmin" style="transform: translateY(188px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Textile Admin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipPrintAdmin" style="transform: translateY(252px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Print Admin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipTextileLog" style="transform: translateY(316px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Textile Log</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipSystemLog" style="transform: translateY(380px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>System Log</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipStatistic" style="transform: translateY(444px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Statistic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__wrapper" id="tooltipModules" style="transform: translateY(508px)">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Modules</p>
+                        </div>
+                    </div>
+                </div>
+                <img id="button-1" src="../../src/SystemAdmin/Icons R-home.png" alt="">
+                <img id="button-2" src="../../src/SystemAdmin/Icons R.png" alt="">
+                <img id="button-3" src="../../src/SystemAdmin/Icons R-1.png" alt="">
+                <img id="button-4" src="../../src/SystemAdmin/Icons R-2.png" alt="">
+                <img id="button-5" src="../../src/SystemAdmin/Icons R-3.png" alt="">
+                <img id="button-6" src="../../src/SystemAdmin/Icons R-4.png" alt="">
+                <img id="button-7" src="../../src/SystemAdmin/Icons R-5.png" alt="">
+                <img id="button-8" src="../../src/SystemAdmin/Icons R-6.png" alt="">
+                <img id="button-9" src="../../src/SystemAdmin/Icons R-7.png" alt="">
+                <div class="active__button"></div>
+            </div>
+            <div class="leave">
+
+                <img src="../../src/SystemAdmin/Button-leave.png" alt="" id="leaveAccount">
+                <div class="tooltip__wrapper" id="tooltipLeave" style="top: 50%; transform: translateY(calc(-50% - 5px))">
+                    <div class="info__menu">
+                        <div class="menu__triangle">
+
+                        </div>
+                        <div class="menu__name">
+                            <p>Sign out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" style="padding: 0; flex-direction: row">
+            <div class="content__section__main">
+                <div class="search">
+                    <input type="text" placeholder="Search for anything"/>
+                    <img src="../../src/SystemAdmin/Search.png" alt="">
+                </div>
+                <div class="greetings">
+                    <h1>Hello <span>Mr.Simmons</span></h1>
+                    <p>How are you today?</p>
+                    <img src="../../src/SystemAdmin/Man.png" id="man" alt="">
+                    <img src="../../src/SystemAdmin/Woman.png" id="woman" alt="">
+                </div>
+                <div class="processed__today">
+                    <h2>Processed today</h2>
+                    <div class="card__wrapper">
+
+                    </div>
+                </div>
+                <div class="processed__total">
+                    <h2>Total processed</h2>
+                    <div class="card__wrapper">
+
+                    </div>
+                </div>
+            </div>
+            <div class="content__section__second">
+                <div class="content__section__second__header">
+                    <div class="left">
+                        <div class="notification__section">
+                            <div class="notification__off"></div>
+                            <img src="../../src/SystemAdmin/Notifications.png" alt="">
+                        </div>
+                        <div class="language__section" id="en">
+                            <img src="../../src/SystemAdmin/flagEn.png" id="flagEn" alt="">
+                            <img src="../../src/SystemAdmin/flagNor.png" id="flagNor" alt="">
+                            <div class="lang__choose">
+                                <div class="language__choose__section" id="language__choose__en">
+                                    <img src="../../src/SystemAdmin/flagEn.png" alt="">
+                                    <p>English</p>
+                                </div>
+                                <div class="language__choose__section" id="language__choose__nor">
+                                    <img src="../../src/SystemAdmin/flagNor.png" alt="">
+                                    <p>Norwegian</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text__area">
+                            <h3>Brooklyn Simmons</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div class="profile__img">
+                            <div class="img__wrapper">
+
+                            </div>
+                            <div class="img__online">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__section__second__content">
+                    <div class="calendar">
+                        <div class="calendar__header">
+                            <div class="header__nav">
+                                <h2>Calendar</h2>
+                                <div class="nav__buttons">
+                                    <img src="../../src/OrderingPortal/CaretLeft.png" alt="" id="prevWeek">
+                                    <img src="../../src/OrderingPortal/CaretRight.png" alt="" id="nextWeek">
+                                </div>
+                            </div>
+                            <div class="button__wrapper__calendar">
+                                <button>Jun</button>
+                                <img src="../../src/OrderingPortal/Calendar.png" alt="">
+                                <div class="calendar__months">
+                                    <div class="month__card" id="January">
+                                        <p>January</p>
+                                    </div>
+                                    <div class="month__card" id="February">
+                                        <p>February</p>
+                                    </div>
+                                    <div class="month__card" id="March">
+                                        <p>March</p>
+                                    </div>
+                                    <div class="month__card active__card" id="April">
+                                        <p>April</p>
+                                    </div>
+                                    <div class="month__card" id="May">
+                                        <p>May</p>
+                                    </div>
+                                    <div class="month__card" id="June">
+                                        <p>June</p>
+                                    </div>
+                                    <div class="month__card" id="July">
+                                        <p>July</p>
+                                    </div>
+                                    <div class="month__card" id="August">
+                                        <p>August</p>
+                                    </div>
+                                    <div class="month__card" id="September">
+                                        <p>September</p>
+                                    </div>
+                                    <div class="month__card" id="October">
+                                        <p>October</p>
+                                    </div>
+                                    <div class="month__card" id="November">
+                                        <p>November</p>
+                                    </div>
+                                    <div class="month__card" id="December">
+                                        <p>December</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar__body">
+                            <div class="body__wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest__registrations">
+                        <h2>Latest registrations</h2>
+                        <div class="list__wrapper">
+
+                        </div>
+                    </div>
+                    <div class="latest__deliveries">
+                        <h2>Latest deliveries</h2>
+                        <div class="list__wrapper">
+                            <div class="list__item">
+                                <div class="icon">
+                                    <img src="../../src/SystemAdmin/latestDeliveries.png" alt="">
+                                </div>
+                                <div class="textarea">
+                                    <div class="textarea__heading">
+                                        <p>14/12/2021 15:15</p>
+                                    </div>
+                                    <div class="textarea__body">
+                                        <h2>300</h2>
+                                        <div class="body__subarea">
+                                            <p>uniforms received from</p>
+                                            <p class="caption">Lindelia Nursing Home</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__item">
+                                <div class="icon">
+                                    <img src="../../src/SystemAdmin/latestDeliveries.png" alt="">
+                                </div>
+                                <div class="textarea">
+                                    <div class="textarea__heading">
+                                        <p>14/12/2021 15:15</p>
+                                    </div>
+                                    <div class="textarea__body">
+                                        <h2>300</h2>
+                                        <div class="body__subarea">
+                                            <p>uniforms received from</p>
+                                            <p class="caption">Lindelia Nursing Home</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/SecondMenu.js"></script>
+    <script src="../../scripts/Menu.js"></script>
+    <script src="../../scripts/storage.js"></script>
+    <script src="../../scripts/SystemAdmin/AdminDashboard.js"></script>
+</body>
+</html>

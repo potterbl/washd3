@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../styles/GeneralStyles.css">
+    <link rel="stylesheet" href="../../styles/SystemAdmin/SystemAdminCustomers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="content__wrapper" id="main__content">
+    <div class="dialog">
+        <div class="dialog__content">
+
+        </div>
+    </div>
+    <div class="menu">
+        <img style="width: 72px" src="../../src/SystemAdmin/LogoMini.png" alt="">
+        <div class="menu__buttons">
+            <div class="tooltip__wrapper" id="tooltipHome" style="transform: translateY(-4px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Home</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipSystemAdmin" style="transform: translateY(60px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>System Admin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipCustomerAdmin" style="transform: translateY(124px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Customer Admin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipTextileAdmin" style="transform: translateY(188px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Textile Admin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipPrintAdmin" style="transform: translateY(252px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Print Admin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipTextileLog" style="transform: translateY(316px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Textile Log</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipSystemLog" style="transform: translateY(380px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>System Log</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipStatistic" style="transform: translateY(444px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Statistic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip__wrapper" id="tooltipModules" style="transform: translateY(508px)">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Modules</p>
+                    </div>
+                </div>
+            </div>
+            <img id="button-1" src="../../src/SystemAdmin/Icons R-home.png" alt="">
+            <img id="button-2" src="../../src/SystemAdmin/Icons R.png" alt="">
+            <img id="button-3" src="../../src/SystemAdmin/Icons R-1.png" alt="">
+            <img id="button-4" src="../../src/SystemAdmin/Icons R-2.png" alt="">
+            <img id="button-5" src="../../src/SystemAdmin/Icons R-3.png" alt="">
+            <img id="button-6" src="../../src/SystemAdmin/Icons R-4.png" alt="">
+            <img id="button-7" src="../../src/SystemAdmin/Icons R-5.png" alt="">
+            <img id="button-8" src="../../src/SystemAdmin/Icons R-6.png" alt="">
+            <img id="button-9" src="../../src/SystemAdmin/Icons R-7.png" alt="">
+            <div class="active__button" style="transform: translateY(128px)"></div>
+        </div>
+        <div class="leave">
+
+            <img src="../../src/SystemAdmin/Button-leave.png" alt="" id="leaveAccount">
+            <div class="tooltip__wrapper" id="tooltipLeave" style="top: 50%; transform: translateY(calc(-50% - 5px))">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Sign out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__search__header">
+            <div class="header__left">
+                <input type="text" placeholder="Search for anything">
+                <img src="../../src/SystemAdmin/Search.png" alt="">
+            </div>
+            <div class="header__right">
+                <div class="right__buttons">
+                    <div class="notifications">
+                        <div class="notification__off"></div>
+                        <img src="../../src/SystemAdmin/Notifications.png" alt="">
+                    </div>
+                    <div class="language">
+                        <img src="../../src/SystemAdmin/flagEn.png" alt="" id="flagEn">
+                        <img src="../../src/SystemAdmin/flagNor.png" alt="" id="flagNor">
+                        <div class="language__select">
+                            <div class="language__section" id="langEn">
+                                <img src="../../src/SystemAdmin/flagEn.png" alt="">
+                                <p>English</p>
+                            </div>
+                            <div class="language__section" id="langNor">
+                                <img src="../../src/SystemAdmin/flagNor.png" alt="">
+                                <p>Norwegian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__profile">
+                    <div class="profile__textarea">
+                        <h3>Brooklyn Simmons</h3>
+                        <p>View Profile</p>
+                    </div>
+                    <div class="profile__picture">
+                        <div class="img__profile">
+
+                        </div>
+                        <div class="profile__online">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__inner">
+            <div class="content__inner__header">
+                <div class="left">
+                    <button id="buttonCustomers">Customers</button>
+                    <button id="buttonContacts">Contacts</button>
+                    <button id="buttonResidents">Residents</button>
+                </div>
+                <div class="right">
+                    <button id="buttonAdd">Add Customer</button>
+                    <img src="../../src/SystemAdmin/Plus.png" alt="">
+                </div>
+            </div>
+            <div class="content__wrapper">
+                <div class="wrapper__header">
+                    <p>All Customers</p>
+                </div>
+                <div class="content__section">
+
+                </div>
+                <div class="content__footer">
+                    <div class="footer__left">
+                        <button>Show 10</button>
+                        <img src="../../src/SystemAdmin/CaretDown.png" alt="">
+                    </div>
+                    <div class="footer__right">
+                        <button id="prevPage"><</button>
+                        <div class="button__pages">
+                        </div>
+                        <button id="nextPage">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../scripts/Menu.js"></script>
+<script src="../../scripts/storage.js"></script>
+<script src="../../scripts/SystemAdmin/HeaderContent.js"></script>
+<script src="../../scripts/SystemAdmin/SystemAdminCustomers.js"></script>
+</body>
+</html>

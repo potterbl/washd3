@@ -1,0 +1,98 @@
+.login__sys{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+    color: white;
+}
+.languages{
+    position: absolute;
+    top: 32px;
+    right: 64px;
+    display: flex;
+    gap: 16px;
+}
+.language__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all .4s;
+}
+.languages img{
+    width: 28px;
+}
+.lang__active{
+    background-color: #fff;
+}
+.login__logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 64px;
+}
+.login__form{
+    background-image: url("/src/SystemAdmin/BG.png") ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3082F7;
+}
+.login__form h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 130%;
+}
+.login__form .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+.inputs{
+    display: grid;
+    gap: 16px;
+    width: max-content;
+}
+input {
+    width: 400px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    padding: 30px 16px 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+label{
+    position: relative;
+}
+label p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    transition: all .3s ease;
+}
+button{
+    width: 400px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 0;
+}
